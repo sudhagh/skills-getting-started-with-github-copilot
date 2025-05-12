@@ -37,6 +37,7 @@ main {
 
 @media (min-width: 768px) {
   main {
+    display: grid; /* Fix: Add this line to define the grid container */
     grid-template-columns: 2fr 1fr;
   }
 }
@@ -72,6 +73,44 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #555;
+}
+
+.activity-card ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.activity-card .participants {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f0f8ff; /* Light blue background for participants section */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.activity-card .participants h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #1a237e;
+  font-weight: bold;
+}
+
+.participant {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0f8ff; /* Light blue background for distinction */
+  color: #333;
+  font-size: 16px;
 }
 
 .form-group {
